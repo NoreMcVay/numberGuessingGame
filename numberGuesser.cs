@@ -3,9 +3,6 @@
 namespace numberGuesser {
     class MainClass {
         public static void Main(string[] args) {
-            //string name = "nore";
-            //int age = 31;
-            //Console.WriteLine("{0} is {1}", name, age);
 
             GetAppInfo(); // Run getAppInfo function to get info
 
@@ -13,9 +10,6 @@ namespace numberGuesser {
 
 
             while (true) {
-                // Init correct number
-                //int correctNumber = 7;
-
                 // Create a new Random object
                 Random random = new Random();
 
@@ -63,7 +57,7 @@ namespace numberGuesser {
                 string answer = Console.ReadLine().ToUpper();
 
                 if (answer == "Y") {
-                    Console.WriteLine("Okay cool, lets play again!");
+                    Console.WriteLine("Okay, lets play again!");
                     continue;
                 } else if (answer == "N") {
                     Console.WriteLine("Okay, Bye!");
@@ -79,7 +73,7 @@ namespace numberGuesser {
             // Set app vars
             string appName = "Number Guesser";
             string appVersion = "1.0.0";
-            string appAuthor = "Nore McVay";
+            string appAuthor = "Noor McVay";
 
             // Change text colour
             Console.ForegroundColor = ConsoleColor.Green;
